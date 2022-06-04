@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Flow</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            border: 2px solid black;
+            max-width: 500px;
+            margin-bottom: 5px;
+        }
+         
+        /*Não tem quebra de linha. Os itens começam da direita para esquerda*/
+        .padrao {
+            flex-flow: row nowrap;
+        }
+
+        .item {
+            background-color: blue;
+            margin: 5px;
+            text-align: center;
+            color: antiquewhite;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        /*Dependendo da quantidade de itens aplica quebra de linhas. Os itens começam de cima pra baixo, da esquerda para direita
+        row=fileira ou linha
+        */
+        .wrap {
+            flex-flow: row wrap;
+        }
+
+        /*Dependendo da qutidade de itens aplica quebra de lihas. Os itens começam de baixo pra cima, da esquerda pra direita*/
+        .wrap-reverse {
+            flex-flow: row wrap-reverse;
+        }
+
+        /*Não tem quebra de linha. Os itens começam da direita para a esquerda*/
+        .row-reverse {
+            flex-flow: row-reverse nowrap;
+        }
+
+        /*Dependendo da quantidade de itens aplica quebra de linhas. Os itens começam de cima pra baixo,  da direita para esquerda*/
+        .row-reverse-wrap {
+            flex-flow: row-reverse wrap;
+        }
+
+        /*Dependendo da quantidade de itens aplica quebra de linhas. Os itens começam de baixo pra cima, da direita para esquerda.*/
+        .row-reverse-wrap-reverse {
+            flex-flow: row-reverse wrap-reverse;
+        }
+    
+    </style>
+    
+</head>
+<body>
+    <h1>Padrao: row nowrap</h1>
+    <div class="flex-container padrao">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <h1>Row e Wrap</h1>
+    <div class="flex-container wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+    <h1>Wrap-reverse</h1>
+    <div class="flex-container wrap-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+    <h1>Row-reverse nowrap</h1>
+    <div class="flex-container row-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+    <h1>Row-reverse e Wrap</h1>
+    <div class="flex-container row-reverse-wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+    <h1>Row-reverse e Wrap-reverse</h1>
+    <div class="flex-container row-reverse-wrap-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+</html>
