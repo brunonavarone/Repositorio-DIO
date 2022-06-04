@@ -1,5 +1,5 @@
-# Repositório do desafio de projeto sobre Git/GitHub da DIO
-Meu primeiro desafio de projeto (GitGithub)
+# Repositório de Aulas e Bootcamps da DIO
+Meu primeiro repositório
 
 ## Links úteis
 [Sintaxe básica Markdown](https://www.markdownguide.org/)
