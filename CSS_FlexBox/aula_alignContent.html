@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Content</title>
+        
+    <style>
+        .container {
+            height: 400px;
+            max-width: 300px;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid black;
+        }
+
+        .item {
+            background-color: coral;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: rgb(247, 228, 221);
+            margin: 5px;
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+        
+        .center {
+            align-content: center;
+        }
+
+        .flex-start {
+            align-content: flex-start;
+        }
+
+        .flex-end {
+            align-content: flex-end;
+        }
+
+        .space-between {
+            align-content: space-between;
+        }
+
+        .space-around {
+            align-content: space-around;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>align-content</h1>
+    <h4>stretch</h4>
+    <div class="container stretch">
+        <div class="item">The point of using Lorem Ipsum</div>
+        <div class="item">TThe point of using Lorem Ipsum</div>
+        <div class="item">The point</div>
+        <div class="item">The point of using Lorem Ips</div>
+        <div class="item">The</div>
+        <div class="item">The point of using Lorem Ipsum</div>
+        <div class="item">The point of using Lorem Ipsum</div>
+    </div>
+
+    <h4>center</h4>
+    <div class="container center">
+        <div class="item">The point of using Lorem Ipsum</div>
+        <div class="item">TThe point of using Lorem Ipsum</div>
+        <div class="item">The point</div>
+        <div class="item">The point of using Lorem Ips</div>
+        <div class="item">The</div>
+        <div class="item">The point of using Lorem Ipsum</div>
+        <div class="item">The point of using Lorem Ipsum</div>
+    </div>
+
+    <h4>flex-start</h4>
+    <div class="container flex-start">
+        <div class="item">The point of using Lorem Ipsum</div>
+        <div class="item">TThe point of using Lorem Ipsum</div>
+        <div class="item">The point</div>
+        <div class="item">The point of using Lorem Ips</div>
+        <div class="item">The</div>
+        <div class="item">The point of using Lorem Ipsum</div>
+        <div class="item">The point of using Lorem Ipsum</div>
+    </div>
+
+    <h4>flex-end</h4>
+    <div class="container flex-end">
+        <div class="item">The point of using Lorem Ipsum</div>
+        <div class="item">TThe point of using Lorem Ipsum</div>
+        <div class="item">The point</div>
+        <div class="item">The point of using Lorem Ips</div>
+        <div class="item">The</div>
+        <div class="item">The point of using Lorem Ipsum</div>
+        <div class="item">The point of using Lorem Ipsum</div>
+    </div>
+
+    <h4>space-between</h4>
+    <div class="container space-between">
+        <div class="item">The point of using Lorem Ipsum</div>
+        <div class="item">TThe point of using Lorem Ipsum</div>
+        <div class="item">The point</div>
+        <div class="item">The point of using Lorem Ips</div>
+        <div class="item">The</div>
+        <div class="item">The point of using Lorem Ipsum</div>
+        <div class="item">The point of using Lorem Ipsum</div>
+    </div>
+
+    <h4>space-around</h4>
+    <div class="container space-around">
+        <div class="item">The point of using Lorem Ipsum</div>
+        <div class="item">TThe point of using Lorem Ipsum</div>
+        <div class="item">The point</div>
+        <div class="item">The point of using Lorem Ips</div>
+        <div class="item">The</div>
+        <div class="item">The point of using Lorem Ipsum</div>
+        <div class="item">The point of using Lorem Ipsum</div>
+    </div>
+
+</body>
+</html>
