@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex (atalhos)</title>
+    <style>
+        .flex-container{
+            max-width: 400px;
+            color: rgb(0, 0, 70);
+            display: flex;
+            border: 2px solid black;
+        }
+
+        .flex-item {
+            background-color: rgb(95, 6, 179);
+            color: aliceblue;
+            text-align: center;
+            font-size: 24px;
+            padding: 5px;
+            margin: 2px;
+
+        }
+
+        .flex-1 {
+            /*definindo grow = 1, shrink = 1 e basis = 0*/
+            flex: 1;
+        }
+
+        .flex-2 {
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex (atalhos)</h1>
+    <h3>flex: 1</h3>
+    <div class="flex-container">
+        <div class="flex-item flex-1">A</div>
+        <div class="flex-item flex-1">BBB</div>
+        <div class="flex-item flex-1">CC</div>
+        <div class="flex-item flex-1">D</div>
+        <div class="flex-item flex-1">EF</div>
+    </div>
+
+    <h3>flex: mix</h3>
+    <div class="flex-container">
+        <div class="flex-item flex-1">A</div>
+        <div class="flex-item flex-2">BBB</div>
+        <div class="flex-item flex-1">CC</div>
+        <div class="flex-item flex-2">D</div>
+        <div class="flex-item flex-2">EF</div>
+    </div>
+</body>
+</html>

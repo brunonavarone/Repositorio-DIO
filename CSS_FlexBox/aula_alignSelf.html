@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Self</title>
+    <style>
+        .flex-container {
+            max-width: 400px;
+            border: 3px solid black;
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .item {
+            background-color: chocolate;
+            color: black;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .align-container-center {
+            align-items: center;
+        }
+
+        .auto {
+            align-self: auto;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .flex-start {
+            align-self: flex-start;
+        }
+
+        .flex-end {
+            align-self: flex-end;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>aling-self row</h1>
+    <h3>auto</h3>
+    <div class="flex-container">
+        <div class="item auto">A</div>
+        <div class="item auto">CC</div>
+        <div class="item auto">Lorem ipsum dolor sit amet ASUAHSA SAUSHASUAH!</div>
+        <div class="item auto">D</div>
+    </div>
+
+    <h3>auto com o container centralizando itens</h3>
+    <div class="flex-container align-container-center">
+        <div class="item auto">A</div>
+        <div class="item auto">B</div>
+        <div class="item auto">Lorem ipsum dolor sit amet ASUAHSA!</div>
+        <div class="item auto">D</div>
+    </div>
+
+    <h3>misturado</h3>
+    <div class="flex-container">
+        <div class="item center">AAAA</div>
+        <div class="item auto flex-end">B</div>
+        <div class="item stretch">CC</div>
+        <div class="item auto">Lorem ipsum dolor sit amet ASUAHSA SAUSHASUAH!</div>
+        <div class="item baseline">ITEM D</div>
+    </div>
+
+    <h1>aling-self column</h1>
+    <h3>auto</h3>
+    <div class="flex-container column">
+        <div class="item auto">A</div>
+        <div class="item auto">CC</div>
+        <div class="item auto">Lorem ipsum dolor sit amet ASUAHSA SAUSHASUAH!</div>
+        <div class="item auto">D</div>
+    </div>
+
+    <h3>auto com o container centralizando itens</h3>
+    <div class="flex-container align-container-center column">
+        <div class="item auto">A</div>
+        <div class="item auto">B</div>
+        <div class="item auto">Lorem ipsum dolor sit amet ASUAHSA!</div>
+        <div class="item auto">D</div>
+    </div>
+
+    <h3>misturado</h3>
+    <div class="flex-container column">
+        <div class="item center">AAAA</div>
+        <div class="item auto flex-end">B</div>
+        <div class="item stretch">CC</div>
+        <div class="item auto">Lorem ipsum dolor sit amet ASUAHSA SAUSHASUAH!</div>
+        <div class="item flex-start">ITEM D</div>
+    </div>
+
+</body>
+</html>
