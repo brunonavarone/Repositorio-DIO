@@ -1,29 +1,38 @@
 var numeroAtualContainer = document.getElementById('numero-atual');
 var numeroAtual = 0;
 
-function funAcrescentar() {
+function funAcrescentar()
+{
     numeroAtual = numeroAtual + 1;
     numeroAtualContainer.innerHTML = numeroAtual;
-    if(numeroAtual<0){
+
+    if(numeroAtual<0)
+    {
         numeroAtualContainer.style.color="red";
-        
-        
+           
     }
-    else{
+
+    else
+    {
         numeroAtualContainer.style.color="black";
     }
     
     
 }
 
-function funSubtrair() {
+function funSubtrair()
+{
     numeroAtual = numeroAtual - 1;
     numeroAtualContainer.innerHTML = numeroAtual;
-    if(numeroAtual<0){
+
+    if(numeroAtual<0)
+    {
         numeroAtualContainer.style.color="red";
         
     }
-    else{
+
+    else
+    {
         numeroAtualContainer.style.color="black";
         
     }
