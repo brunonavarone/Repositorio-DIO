@@ -1,0 +1,62 @@
+﻿O Typescript funciona como se fosse uma extensão do javascript.
+Adiciona checagem de tipo e diversas outras featurings que o JS não tem nativamente.
+  
+
+No código anterior, ao criar a função soma e declarar os parâmetros que precisam ser recebidos, pelo typescript é possível delimitar o tipo de dado que é enviado, ou seja, foi explicitado que os dois parâmetros precisam ser do tipo number.
+
+
+Types - servem para definir a estrutura de dados para os parâmetros das classes e funções no TS 
+Types são mais usados para fazermos junções e merges das interfaces para serem utilizadas no código.
+Interfaces - contratos para implementar nas suas classes
+
+
+  
+
+   
+
+
+Para acessar um elemento de uma página HTML é preciso especificar o tipo de elemento que foi acessado. Se não fizer essa especificação a variável criada para guardas as informações HTML (no exemplo abaixo é a const input) vai ser considerada uma variável do tipo HTML genérico. 
+No código abaixo utilizou-se o termo ‘as’ junto do tipo de elemento, que foi o ‘HTMLInputElement’
+  
+
+
+
+  
+
+OBS: O HTMLInputElement precisa ser relacionado com a variável depois de definir essa mesma variável com um elemento de web. Não é possível declarar a variável e já relacioná-la a algum HTML_Element direto.
+Ex de como não funcionaria o código anterior:
+const input: HTMLInputElement = document.getElementById(‘input’);
+
+
+Generic types 
+   
+<T> = explicitando que não sabe qual vai ser o tipo de parâmetro recebido na função.
+
+
+  
+
+Criando uma interface de usuário (IUsuario) com duas propriedades:
+id e e-mail.
+Criando uma interface de adm (IAdmin) que herda as características de IUsuario.
+Criando uma função que verifica o tipo de usuário.
+   
+O ponto de interrogação no final ‘?’ de uma propriedade de uma interface, faz com que aquele dado seja opcional.
+Se o cargo do usuário não for qualquer um dos 4 que foram definidos na sua criação, a função vai redirecionar para a área de usuário “normal”.
+  
+
+  
+
++readonly serve para que os valores determinados itens funcionem apenas para leitura, impossibilitando alteração deles. 
+
+
+Importando uma variável de outro arquivo javascript  
+  
+
+
+
+Utilizando OMITS
+  
+
+linha 1 - Criando uma interface do tipo pessoa e algumas propriedades
+linha 7 - Criando uma nova interface do tipo Brasileiro que herda características da interface Pessoa, mas omitindo a propriedade nacionalidade.
+(pesquisar utility Types typescript)
